@@ -1,0 +1,15 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+lib/summarizer.rb
+script/console
+script/destroy
+script/generate
+spec/spec.opts
+spec/spec_helper.rb
+spec/summarizer_spec.rb
+tasks/rspec.rake
+test/test_helper.rb
+test/test_summarizer.rb
