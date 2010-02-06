@@ -4,13 +4,14 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = 'summarizer'
-    gem.summary = 'Make totals and sub-totals of your tables'
-    gem.description = 'Make sums and subtotals of your database tables'
+    gem.name = "summarizer"
+    gem.summary = %Q{TODO: one-line summary of your gem}
+    gem.description = %Q{TODO: longer description of your gem}
     gem.email = "info@purevirtual.de"
     gem.homepage = "http://github.com/ChristophPetschnig/summarizer"
     gem.authors = ["Christoph Petschnig"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_development_dependency "yard", ">= 0"
     gem.add_development_dependency "cucumber", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -46,12 +47,11 @@ end
 
 task :default => :spec
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "the-perfect-gem #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+begin
+  require 'yard'
+  YARD::Rake::YardocTask.new
+rescue LoadError
+  task :yardoc do
+    abort "YARD is not available. In order to run yardoc, you must: sudo gem install yard"
+  end
 end

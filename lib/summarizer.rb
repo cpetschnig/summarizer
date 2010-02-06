@@ -6,4 +6,4 @@ module Summarizer
 end
 
 require 'summarizer/base'
-require 'summarizer/add_id_up'
+require 'summarizer/add_it_up'

@@ -1,11 +1,7 @@
-require File.dirname(__FILE__) + '/spec_helper.rb'
+require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-# Time to add your specs!
-# http://rspec.info/
-describe "Place your specs here" do
-  
-  it "find this spec in spec directory" do
-    # violated "Be sure to write your specs"
+describe "Summarizer" do
+  it "fails" do
+    fail "hey buddy, you should probably rename this file and start specing for real"
   end
-  
 end

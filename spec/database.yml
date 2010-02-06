@@ -1,0 +1,10 @@
+mysql:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: rails_summarizer_test
+  pool: 5
+  username: rails
+  password: rails
+  socket: /var/run/mysqld/mysqld.sock
+
