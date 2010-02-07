@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christoph Petschnig"]
   s.date = %q{2010-02-07}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Make sums and subtotals of your database tables}
   s.email = %q{info@purevirtual.de}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Make sums and subtotals of your database tables}
   s.test_files = [
     "spec/models/foo.rb",
      "spec/models/bar.rb",
