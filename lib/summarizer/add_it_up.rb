@@ -30,6 +30,10 @@ module Summarizer
         @empty
       end
 
+      def static
+        Static.new(@attributes)
+      end
+
       def method_missing(symbol, *args)
         return @attributes[symbol] if @attributes.has_key? symbol
         super symbol, *args

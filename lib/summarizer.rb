@@ -7,3 +7,4 @@ end
 
 require 'summarizer/base'
 require 'summarizer/add_it_up'
+require 'summarizer/static'

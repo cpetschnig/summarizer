@@ -46,7 +46,7 @@ module Summarizer
                 def set_table_info(new_group, end_of_group, sum_group)
                   @new_section = new_group
                   @end_of_section = end_of_group
-                  @sum_section = sum_group if end_of_group
+                  @sum_section = sum_group.static if end_of_group
                 end
                 # Returns +true+, if this items is the first of a new section
                 def new_section?
