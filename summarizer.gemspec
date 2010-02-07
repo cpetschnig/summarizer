@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{summarizer}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christoph Petschnig"]
@@ -60,15 +60,24 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_development_dependency(%q<yard>, [">= 0"])
       s.add_development_dependency(%q<cucumber>, [">= 0"])
+      s.add_development_dependency(%q<factory_girl>, [">= 0"])
+      s.add_development_dependency(%q<active_record>, [">= 0"])
+      s.add_development_dependency(%q<database_cleaner>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
       s.add_dependency(%q<yard>, [">= 0"])
       s.add_dependency(%q<cucumber>, [">= 0"])
+      s.add_dependency(%q<factory_girl>, [">= 0"])
+      s.add_dependency(%q<active_record>, [">= 0"])
+      s.add_dependency(%q<database_cleaner>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
     s.add_dependency(%q<yard>, [">= 0"])
     s.add_dependency(%q<cucumber>, [">= 0"])
+    s.add_dependency(%q<factory_girl>, [">= 0"])
+    s.add_dependency(%q<active_record>, [">= 0"])
+    s.add_dependency(%q<database_cleaner>, [">= 0"])
   end
 end
 
